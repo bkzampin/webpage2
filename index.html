@@ -8,6 +8,35 @@
 <link rel="stylesheet" href="https://use.typekit.net/atg3vfc.css">
 
 <style> 
+    /* Float the image to the left */
+    .profile-image {
+      float: left; /* Floats the image to the left */
+      margin-right: 10px; /* Adds space between the image and the text */
+      width: 300px; /* Adjust the image width as needed */
+      height: auto; /* Maintain the aspect ratio */
+    }
+
+    /* Style for the text section */
+    .profile-text {
+      overflow: hidden; /* Ensures proper layout around floated elements */
+    }
+      /* Clear floats for the resume section */
+    .resume-section {
+      clear: both; /* Ensures this section starts below floated elements */
+      margin-top: 20px; /* Adds spacing above the resume */
+    }
+
+    /* Example styling for the columns */
+    .row {
+      display: flex;
+      gap: 20px; /* Space between columns */
+    }
+
+    .column {
+      flex: 1; /* Each column takes up equal width */
+      border: 1px solid #ccc; /* Optional: Adds a border for clarity */
+      padding: 10px; /* Adds padding inside each column */
+    }
   .header {
     background-color: #e2f1fb; /* light blue */
     padding: 0px;
@@ -17,7 +46,7 @@
    /*   align-items: center; /* Centers content vertically (if the height is greater) */
 
    img {
-      width: 500px; /* Set the width of the image */
+      width: 500px; /* Set the width of the image*/
       height: auto; /* Keep the aspect ratio */
       margin-left: 100px; /* Moves the image to the right */
    }
@@ -103,7 +132,7 @@
 <body> 
   
   <div class="header">
-    <img src="port-folio.png" alt="portfolio">
+    <img src="port-folio.png" alt="portfolio" >
   </div>
   
   <div class="topnav">
@@ -113,38 +142,43 @@
   </div>
 
   <!-- Main content -->
-  <h1>HEY,</h1>
-  <h2>
-    I'm Brianna! I have completed my first year at the University of Waterloo, majoring in Global Business & Digital Arts, based at the Stratford School of Interaction Business and Design. My studies have focused on foundation courses in computer science, languages (Italian & French), creative arts design, economics, and marketing.
-  </h2>
-
-  <h3>RESUME</h3> <!-- Ensures h3 is below h1 -->
-
-  <div class="row">
-    <div class="column">
-      <h2>Column</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  <div>
+    <!-- Image floated to the left -->
+    <img class="profile-image" src="headshot copy.png" alt="portfolio">
+    
+    <!-- Text to the right of the image -->
+    <div class="profile-text">
+      <h1>HEY,</h1>
+      <h2>
+        I'm Brianna! I have completed my first year at the University of Waterloo, majoring in Global Business & Digital Arts, based at the Stratford School of Interaction Business and Design. My studies have focused on foundation courses in computer science, languages (Italian & French), creative arts design, economics, and marketing.
+      </h2>
     </div>
-
-    <div class="column">
-      <h2>Certifications</h2>
-      <p>
-        Standard First Aid/CPR/AED level C <br>
-        WHIMIS - 2023 <br>
-        Photoshop certified - 2022 <br>
-        Curatorial certified - 2023 <br>
-        Food Handlers cert #110483 - 2021/2026 <br>
-      </p>
-    </div>
-
-    <div class="column">
-      <h2>Technical skills</h2>
-      <p>
-        Visual design<br>
-        UI/UX design<br>
-        User research<br>
-        Proficiency in design software<br>
-      </p>
+  <div class="resume-section">
+    <h3>RESUME</h3>
+    <div class="row">
+      <div class="column">
+        <h2>Column</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+      </div>
+      <div class="column">
+        <h2>Certifications</h2>
+        <p>
+          Standard First Aid/CPR/AED level C<br>
+          WHIMIS - 2023<br>
+          Photoshop certified - 2022<br>
+          Curatorial certified - 2023<br>
+          Food Handlers cert #110483 - 2021/2026<br>
+        </p>
+      </div>
+      <div class="column">
+        <h2>Technical Skills</h2>
+        <p>
+          Visual design<br>
+          UI/UX design<br>
+          User research<br>
+          Proficiency in design software<br>
+        </p>
+      </div>
     </div>
   </div>
 
