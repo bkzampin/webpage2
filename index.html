@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<meta charset="UTF-8">
+
+<head>
+<!--- Created by Brianna Zampini on Nov 20 --->
+<title>Personal website</title>
+<link rel="stylesheet" href="https://use.typekit.net/atg3vfc.css">
+
+<style> 
+  .header {
+    background-color: #e2f1fb; /* light blue */
+    padding: 0px;
+    text-align: center;
+   /*  display: flex; /* Use flexbox to center content */
+   /*   justify-content: center; /* Centers content horizontally */
+   /*   align-items: center; /* Centers content vertically (if the height is greater) */
+
+   img {
+      width: 500px; /* Set the width of the image */
+      height: auto; /* Keep the aspect ratio */
+      margin-left: 100px; /* Moves the image to the right */
+   }
+  }
+
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #aed1e3; /* light blue */
+    display: flex; /* Use flexbox for horizontal layout */
+  }
+
+  /* Style the topnav links */
+  .topnav a {
+    color: #493a2d; /* brown */
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    width: 100%;
+  }
+
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #e2f1fb; /* light blue */
+    color: #493a2d; /* brown */
+  }
+
+  /* Footer */
+  .footer {
+    background-color: #e2f1fb;
+    padding: 10px;
+    text-align: center;
+  }
+
+  /* General body settings */
+  body {
+  background-color: #e2f1fb; /* Light gray background for the whole page */
+  font-family: "futura-pt", sans-serif;
+  }
+
+  /* Header <h1> styling */
+  h1 {
+    color: #493a2d; /* brown */
+    font-size: 100px;
+    text-align: right;
+    margin: 10px 0; /* Adds margin to the top and bottom */
+  }
+
+  /* Sub-header <h2> styling */
+  h2 {
+    color: #493a2d; /* brown */
+    font-size: 20px;
+    text-align: right;
+    margin: 10px 0;
+  }
+
+  /* Header <h3> styling */
+  h3 {
+    color: #493a2d; /* brown */
+    font-size: 100px; /* Adjust size to fit design better */
+    text-align: left; /* Align to the left */
+    margin: 30px 0; /* Adds space between h3 and the rest of the content */
+  }
+
+  /* Create three equal columns that float next to each other */
+  .column {
+    float: left;
+    width: 30%;
+    padding: 15px;
+  }
+
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+</style>
+
+</head>
+  
+<body> 
+  
+  <div class="header">
+    <img src="port-folio.png" alt="portfolio">
+  </div>
+  
+  <div class="topnav">
+    <a href="#">Physical art</a>
+    <a href="#">Digital art</a>
+    <a href="#">Marketing</a>
+  </div>
+
+  <!-- Main content -->
+  <h1>HEY,</h1>
+  <h2>
+    I'm Brianna! I have completed my first year at the University of Waterloo, majoring in Global Business & Digital Arts, based at the Stratford School of Interaction Business and Design. My studies have focused on foundation courses in computer science, languages (Italian & French), creative arts design, economics, and marketing.
+  </h2>
+
+  <h3>RESUME</h3> <!-- Ensures h3 is below h1 -->
+
+  <div class="row">
+    <div class="column">
+      <h2>Column</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+    </div>
+
+    <div class="column">
+      <h2>Certifications</h2>
+      <p>
+        Standard First Aid/CPR/AED level C <br>
+        WHIMIS - 2023 <br>
+        Photoshop certified - 2022 <br>
+        Curatorial certified - 2023 <br>
+        Food Handlers cert #110483 - 2021/2026 <br>
+      </p>
+    </div>
+
+    <div class="column">
+      <h2>Technical skills</h2>
+      <p>
+        Visual design<br>
+        UI/UX design<br>
+        User research<br>
+        Proficiency in design software<br>
+      </p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Footer</p>
+  </div>
+
+</body>
+
+</html>
