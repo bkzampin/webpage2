@@ -8,9 +8,6 @@
 <link rel="stylesheet" href="https://use.typekit.net/atg3vfc.css">
 
 <style> 
-  
-  
-    /* Float the image to the left */
     .profile-image {
   float: left; /* Floats the image to the left */
   margin: 20px 10px 0 50px;
@@ -25,7 +22,7 @@
       /* Clear floats for the resume section */
     .resume-section {
       clear: both; /* Ensures this section starts below floated elements */
-      margin-top: 20px; /* Adds spacing above the resume */
+    /*  margin-top: 20px; /* Adds spacing above the resume */
       background-color: #aed1e3; /* Sets the background color */
 
     }
@@ -37,9 +34,11 @@
     }
 
     .column {
+      color: #493a2d; /* brown */
       flex: 1; /* Each column takes up equal width */
-      border: 1px solid #ccc; /* Optional: Adds a border for clarity */
-      padding: 10px; /* Adds padding inside each column */
+      /*border: 1px solid #ccc; /* Optional: Adds a border for clarity */
+     /* font-size: 20px;
+   /*   padding: 10px; /* Adds padding inside each column */
     }
   
   .header {
@@ -122,6 +121,23 @@ font-family: "futura-pt-bold", sans-serif; /* Use the bold font */
 font-weight: 700; /* Ensure bold weight */
   }
   
+  h4{
+    color: #493a2d; /* brown */
+font-size: 40px;
+text-align: left; /* Align to the left */
+margin: 30px 30px 10px 40px; /* margin */
+font-family: "futura-pt-bold", sans-serif; /* Use the bold font */
+font-weight: 700; /* Ensure bold weight */
+  }
+  
+  h5{
+        color: #493a2d; /* brown */
+font-size: 20px;
+text-align: left; /* Align to the left */
+margin: 0px 30px 10px 40px; /* margin */
+font-weight: 400; /* Ensure bold weight */
+
+  }
   .resized-image {
   width: 300px; /* Adjust width */
   height: auto; /* Maintain aspect ratio */
@@ -188,22 +204,27 @@ font-weight: 700; /* Ensure bold weight */
   <div class="resume-section">
     <h3>RESUME</h3>
     <div class="row">
+     
       <div class="column">
         <h2><img class="resized-image" src="apps2.png" alt="apps"></h2>
-        <p> 
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-      </div>
-      <div class="column">
-        <h2>
-          <img class="education-image" src="education.png" alt="education">
-        </h2>
-  
-        <p>
-          Standard First Aid/CPR/AED level C<br>
+      <h4>
+      Certifications  
+        </h4>
+        <h5> 
+        Standard First Aid/CPR/AED level C<br>
           WHIMIS - 2023<br>
           Photoshop certified - 2022<br>
           Curatorial certified - 2023<br>
           Food Handlers cert #110483 - 2021/2026<br>
+        </h5>
+      </div>
+      
+      <div class="column">
+        <h2>
+          <img class="education-image" src="education.png" alt="education">
+        </h2>
+        <p>
+          hi
         </p>
       </div>
      
