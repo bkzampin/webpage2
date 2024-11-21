@@ -10,22 +10,19 @@
 <style> 
     .profile-image {
   float: left; /* Floats the image to the left */
-  margin: 20px 10px 0 50px;
+  margin: 40px 10px 0 50px;
   width: 500px; /* Adjust the image width as needed */
   height: auto; /* Maintain the aspect ratio */
     }
 
-    /* Style for the text section */
-    .profile-text {
-      overflow: hidden; /* Ensures proper layout around floated elements */
+    .profile-text {    /* Style for the text section */
+    overflow: hidden; /* Ensures proper layout around floated elements */
     }
-      /* Clear floats for the resume section */
-    .resume-section {
-      clear: both; /* Ensures this section starts below floated elements */
-    /*  margin-top: 20px; /* Adds spacing above the resume */
-      background-color: #aed1e3; /* Sets the background color */
-
-    }
+.resume-section {
+  margin-top: 250px; /* Adds spacing above the resume section */
+  background-color: #aed1e3; /* Sets the background color */
+  /*clear: both; /* Ensures the section is cleared from any floating elements above */
+}
 
     /* Example styling for the columns */
     .row {
@@ -40,6 +37,19 @@
      /* font-size: 20px;
    /*   padding: 10px; /* Adds padding inside each column */
     }
+  /* Assign specific widths to columns by class */
+.column-25 {
+  flex: 0 0 25%; /* 25% width for the first column */
+  margin-left: 40px;
+    margin-right: 40px; /* Adds space to the right of the first column */
+
+}
+
+.column-75 {
+  flex: 0 0 75%; /* 75% width for the second column */
+
+
+}
   
   .header {
     background-color: #e2f1fb; /* light blue */
@@ -145,12 +155,16 @@ font-weight: 400; /* Ensure bold weight */
   margin-left: auto; /* Automatically adjusts left margin */
   margin-right: auto; /* Automatically adjusts right margin */
 }
-  .education-image{
-     width: 500px; /* Adjust width */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Makes the image a block element */
+  .education2-image{
+     width: 900px; /* Adjust width */
+  height: auto; 
+      display: block; /* Makes the image a block element */
+  margin-left: 0; /* Ensures it aligns to the left of its container */
+  margin-right: auto; /* Optional: ensures there's no right margin */
+/* Maintain apect ratio */
+  /*  displa block; /* Makes the image a block element */
  /*margin-left: auto; /* Automatically adjusts left margin */
-  margin-right: auto; /* Automatically adjusts right margin */
+  /*  margin-right: auto; /* Automatically adjusts right margin */
  
   }
 
@@ -205,7 +219,7 @@ font-weight: 400; /* Ensure bold weight */
     <h3>RESUME</h3>
     <div class="row">
      
-      <div class="column">
+      <div class="column column-25">
         <h2><img class="resized-image" src="apps2.png" alt="apps"></h2>
       <h4>
       Certifications  
@@ -219,9 +233,9 @@ font-weight: 400; /* Ensure bold weight */
         </h5>
       </div>
       
-      <div class="column">
+      <div class="column column-75">
         <h2>
-          <img class="education-image" src="education.png" alt="education">
+          <img class="education2-image" src="education2.png" alt="education">
         </h2>
         <p>
           hi
