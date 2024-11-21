@@ -8,12 +8,12 @@
 <link rel="stylesheet" href="https://use.typekit.net/atg3vfc.css">
 
 <style> 
+  
+  
     /* Float the image to the left */
     .profile-image {
-   float: left; /* Floats the image to the left */
-  margin-right: 10px; /* Adds space between the image and the text */
-  margin-top: 20px; /* Adds 20px of space above the image */
-  margin-left: 50px; /* Moves the image to the right */
+  float: left; /* Floats the image to the left */
+  margin: 20px 10px 0 50px;
   width: 500px; /* Adjust the image width as needed */
   height: auto; /* Maintain the aspect ratio */
     }
@@ -26,6 +26,8 @@
     .resume-section {
       clear: both; /* Ensures this section starts below floated elements */
       margin-top: 20px; /* Adds spacing above the resume */
+      background-color: #aed1e3; /* Sets the background color */
+
     }
 
     /* Example styling for the columns */
@@ -39,6 +41,7 @@
       border: 1px solid #ccc; /* Optional: Adds a border for clarity */
       padding: 10px; /* Adds padding inside each column */
     }
+  
   .header {
     background-color: #e2f1fb; /* light blue */
     text-align: center;
@@ -56,7 +59,7 @@
   /* Style the top navigation bar */
   .topnav {
     overflow: hidden;
-    background-color: #aed1e3; /* light blue */
+    background-color: #aed1e3; /* dark blue */
     display: flex; /* Use flexbox for horizontal layout */
   }
 
@@ -65,8 +68,10 @@
     color: #493a2d; /* brown */
     text-align: center;
     padding: 10px;
+    font-size: 20px;
     text-decoration: none;
     width: 100%;
+   font-weight: bold; /* Make the text bold */
   }
 
   /* Change color on hover */
@@ -88,45 +93,59 @@
   font-family: "futura-pt", sans-serif;
   }
 
-  /* Header <h1> styling */
-  h1 {
-    color: #493a2d; /* brown */
-    font-size: 100px;
-    text-align: right;
-    margin: 50px 100px 10px 0; /* Adds a right margin of 150px */
-
-  }
+/* Header <h1> styling */
+h1 {
+  color: #493a2d; /* brown */
+  font-size: 100px;
+  text-align: right;
+  margin: 50px 100px 10px 0; /* Adds a right margin of 100px */
+  font-family: "futura-pt-bold", sans-serif; /* Use the bold font */
+  font-weight: 700; /* set bold weight */
+}
 
   /* Sub-header <h2> styling */
   h2 {
     color: #493a2d; /* brown */
     font-size: 20px;
     text-align: right;
+    font-weight: 400; /* Ensure normal weight */
     margin: 0px 30px 10px 0; /* Adds a right margin of 150px */
-
   }
 
   /* Header <h3> styling */
   h3 {
-    color: #493a2d; /* brown */
-    font-size: 100px; /* Adjust size to fit design better */
-    text-align: left; /* Align to the left */
-    margin: 100px 30px 10px 40px; /* Adds a right margin of 150px */
+color: #493a2d; /* brown */
+font-size: 100px;
+text-align: left; /* Align to the left */
+margin: 200px 30px 10px 40px; /* margin */
+font-family: "futura-pt-bold", sans-serif; /* Use the bold font */
+font-weight: 700; /* Ensure bold weight */
   }
+  
+  .resized-image {
+  width: 300px; /* Adjust width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Makes the image a block element */
+  margin-left: auto; /* Automatically adjusts left margin */
+  margin-right: auto; /* Automatically adjusts right margin */
+}
 
-  /* Create three equal columns that float next to each other */
+
+  /* Create three equal columns that float next to each other 
   .column {
     float: left;
     width: 30%;
     padding: 15px;
   }
+  */
 
-  /* Clear floats after the columns */
+  /* Clear floats after the columns 
   .row::after {
     content: "";
     display: table;
     clear: both;
   }
+  */
   
 </style>
 
@@ -139,19 +158,21 @@
   </div>
   
   <div class="topnav">
-    <a href="#">Physical art</a>
-    <a href="#">Digital art</a>
-    <a href="#">Marketing</a>
+    <a href="#">PHYSICAL ART</a>
+    <a href="#">DIGITAL ART</a>
+    <a href="#">MARKETING</a>
   </div>
 
   <!-- Main content -->
-  <div>
+  <div> 
+
+
     <!-- Image floated to the left -->
     <img class="profile-image" src="headshotinfo.png" alt="portfolio">
     
     <!-- Text to the right of the image -->
     <div class="profile-text">
-      <h1>HEY,</h1>
+      <h1>HEY</h1>
       <h2>
         I'm Brianna! I have completed my first year at the University of Waterloo, majoring in Global Business & Digital Arts, based at the Stratford School of Interaction Business and Design. My studies have focused on foundation courses in computer science, languages (Italian & French), creative arts design, economics, and marketing.
       </h2>
@@ -160,8 +181,9 @@
     <h3>RESUME</h3>
     <div class="row">
       <div class="column">
-        <h2>Column</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        <h2><img class="resized-image" src="apps.png" alt="apps"></h2>
+        <p> 
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
       </div>
       <div class="column">
         <h2>Certifications</h2>
@@ -173,22 +195,14 @@
           Food Handlers cert #110483 - 2021/2026<br>
         </p>
       </div>
-      <div class="column">
-        <h2>Technical Skills</h2>
-        <p>
-          Visual design<br>
-          UI/UX design<br>
-          User research<br>
-          Proficiency in design software<br>
-        </p>
-      </div>
+     
     </div>
   </div>
 
   <div class="footer">
     <p>Footer</p>
   </div>
-
+ </div>
 </body>
 
 </html>
